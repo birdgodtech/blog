@@ -130,7 +130,7 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
     warn = 730             # Display warning if the last modified time is more than these days ago.    # 如果文章最后更新于这天数之前，显示警告
 
   [params.utterances]           # https://github.com/utterance/utterances 评论插件
-    repo = "nusr/blog"               # 安装 https://github.com/apps/utterances  ,配置选择的 github 仓库，，仓库名字要一致
+    repo = "birdgodtech/birdgodtech.github.io"               # 安装 https://github.com/apps/utterances  ,配置选择的 github 仓库，，仓库名字要一致
 
   [params.flowchartDiagrams]# see https://blog.olowolo.com/example-site/post/js-flowchart-diagrams/
     enable = false
@@ -147,7 +147,7 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
     pagePV = true
 
   [params.reward]                             # 文章打赏
-    enable = true
+    enable = false
     wechat = ""           # 微信二维码
     alipay = ""           # 支付宝二维码
 
