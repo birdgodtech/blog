@@ -1,0 +1,86 @@
+// ==============================
+// General Terms(tags, categories, etc.)
+// =============================
+.summary-menu {
+  position: absolute;
+  font-size: 14px;
+  top: 132px;
+
+  &-tags {
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+}
+
+.recent-list {
+  padding-left: 24px;
+}
+
+.terms {
+  margin: 2em 0 3em;
+  text-align: center;
+  font-family: $global-serif-font-family;
+
+  &-wrapper {
+    width: $post-toc-width;
+    margin-left: $post-toc-margin-left;
+    padding: 10px;
+    font-family: $global-serif-font-family;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 1px 1px 2px rgba(236, 236, 236, 0.86);
+    word-wrap: break-word;
+    box-sizing: border-box;
+  }
+
+  &-title {
+    margin: 10px;
+    padding-bottom: 5px;
+    font-size: $post-toc-title-size;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-bottom: $post-border;
+  }
+
+  &-item {
+    list-style: none;
+  }
+
+  &-list {
+    padding: 0;
+
+
+  }
+
+
+  &-link {
+    margin: $terms-link-margin;
+    word-wrap: break-word;
+    transition-duration: 0.2s;
+    transition-property: transform;
+    transition-timing-function: ease-out;
+
+
+    &:active,
+    &:focus,
+    &:hover {
+      color: $theme-color;
+      transform: scale(1.1);
+    }
+  }
+
+  &-count {
+    display: inline-block;
+    position: relative;
+    top: -5px;
+    right: 0;
+    color: $theme-color;
+    font-size: $terms-count-font-size;
+  }
+}
+
+@include max-screen($toc-max-sreen-width) {
+  .summary-menu {
+    display: none;
+  }
+}

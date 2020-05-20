@@ -1,0 +1,15 @@
+<div class="summary-menu">
+
+    <div class="terms-wrapper summary-menu-recent">
+        <h1 class="terms-title">最新文章</h1>
+        <ol class="recent-list">
+            {{ range first 5 (where .Site.RegularPages "Section" "post").ByPublishDate.Reverse }}
+            <li>
+                <a class="terms-link" href="{{ .Permalink | absURL }}">
+                    {{ .Title }}
+                </a>
+            </li>
+            {{ end }}
+        </ol>
+    </div>
+</div>
