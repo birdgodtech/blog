@@ -5,8 +5,8 @@
 .header {
   @include clearfix;
   padding: 40px $header-padding;
-  @import '_header/logo';
-  @import '_header/menu';
+  @import 'src/css/_partial/_header/logo';
+  @import 'src/css/_partial/_header/menu';
   position: relative;
 
   .search-form {

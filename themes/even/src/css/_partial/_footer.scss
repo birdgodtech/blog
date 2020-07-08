@@ -3,8 +3,8 @@
 // =============================
 
 .footer {
-  @import "_footer/social";
-  @import "_footer/copyright";
+  @import "src/css/_partial/_footer/social";
+  @import "src/css/_partial/_footer/copyright";
   padding-top: $footer-margin-top;
   padding-bottom: $footer-margin-top;
 }
